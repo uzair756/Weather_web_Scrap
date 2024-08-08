@@ -16,7 +16,7 @@ def get_weather_data(city):
             return
 
         if not city_regex.match(city):
-            print('Invalid City name format.')
+            print'Invalid City name format.')
             return
 
         api_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
